@@ -1,0 +1,4685 @@
+1980 Jul 30  13:50:39.605  [82]  0xB0C0  LTE RRC OTA Packet  --  UL_DCCH / UECapabilityInformation
+Subscription ID = 1
+Pkt Version = 26
+RRC Release Number.Major.minor = 15.5.0
+NR RRC Release Number.Major.minor = 15.9.0
+Radio Bearer ID = 1, Physical Cell ID = 0
+Freq = 1575
+SysFrameNum = N/A, SubFrameNum = 0
+PDU Number = UL_DCCH Message,    Msg Length = 1584
+SIB Mask in SI =  0x00
+
+Interpreted PDU:
+
+value UL-DCCH-Message ::= 
+{
+  message c1 : ueCapabilityInformation : 
+      {
+        rrc-TransactionIdentifier 0,
+        criticalExtensions c1 : ueCapabilityInformation-r8 : 
+            {
+              ue-CapabilityRAT-ContainerList 
+              {
+                {
+                  rat-Type nr,
+                  ueCapabilityRAT-Container 'E1201000074F5A1302000201404824C5800260D40C13601873E618F28581C130080C4001AA0D89BAC1184341020F94022CB64C550F027C873E819F11C78C73E618F28581C0E1E0B8002F800E000BE0003901C006CA0000A00000E83614606B04610D04083E5008B2D931543C09F21CFA067C471E31CF9863CA1607038784E000BE0038002F8000E00702A0D84BAC1184341020F94022CB64C550F027C873E819F11C78C73E618F28581C0E1E1380020000E000800003801C0A83E016B04610D04083E500892D931541439F11C78C73E618F28581C0E1E04FE8000003FA0000000E00702A0F837AC1184341020F940224B64C55050E7C471E31CF9863CA16070387813FA000000FE80000003801C0A83E036B04610D04083E500892D931541439F11C78C73E618F28581C0E1E04FE0000003F80000000E00702A0F801AC1184341020F940224B64C55050E7C471E31CF9863CA16070387813FB000000FEC0000003801C0E4F00440603E030020000000100000200800002004000018020000100100000A0080000601B953591B582B5829581B5819583340404000025949010000196524040000A594901000039652404000125949004D2A8AA47154162A81C55068A0215006A050381C0E07038002142000020406080C0E16202632363E4A4E50828'H
+                },
+                {
+                  rat-Type eutra-nr,
+                  ueCapabilityRAT-Container 'A1078D8A24040C940389A00000088A260400894389A0000048AA240C0C6C0389A00000008722A89830021B0E26800001021C8AA24040C6C0389A00000008722A89810021B0E26800001021C8AA24000C6C0389A00000008722A89800021B0E26800001021C8AA240C0C4C0389A00000008B91544C1801098713400000811722A8901031300E26800000021C8AA26040084C389A0000040872228900031300E268000002228980002130E2680000122A8901030700E26800000023F22A8981002070E26800001023F22A8900030700E26800000022E45513000040E1C4D000002045C8AA24040C180389A00000008722A8981002060E26800001021C8AA24000C180389A00000008722A8980002060E26800001021C8AA160C41C4D000004045C88A160C01C4D0000064551202060801C4D000000049F22A8981002040E26800001024F9154480018100713400000010E4551300004041C4D00000204391142C088389A00000888A160401C4D0000064550B0020E26800002021C88A160001C4D0000064470B2800E14000003A00101D00E40B0200E128000042220580007094000021150480818300706C00002810E45413020040C1C1B00000C0439150480018300706C00002810E45413000040C1C1B00000C04391102C180383600001C8A824000C080383600001408722A0980002020E0D800006021C888160441C1B0000104440B0200E0D800007222058000706C0000391102C080380C000024888160001C060000124541206062601C02000014045C8A8260C0084C380400002C08B911048001898070080000511104C000109870080000591102C4C03800000030888160C01C0000001A4440B0200E0000000D220B040A8A6D1274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF871274E9DB1CF870A74ED8E7C3853A76C73E1C49D3A76C73E1C49D3A76C73E1C49D3A76C73E1C49D3A76C73E1C29D3B639F0E14E9DB1CF870A74ED8E7C3853A76C73E1C29D3B639F0E14E9DB1CF870A74ED8E7C3893A74ED8E7C3893A74ED8E7C3893A74ED8E7C3893A74ED8E7C3853A76C73E1C49D3A76C73E1C49D3A76C73E1C29D3B639F0E14E9DB1CF870A74ED8E7C3853A76C73E1C29D3B639F0E24E9D3B639F0E24E9D3B639F0E24E9D3B639F0E24E9D3B639F0E14E9DB1CF870A74ED8E7C3853A76C73E18100D1000040000010080801002200008040002000100200420002008080100210001804040080108000C02020080108000200000080404020031000040200010000804006100018040402003080008020201001840006010100A010400010000004020200C018800020100008000401803080004020201C02840006010100E0140'H
+                }
+              }
+            }
+      }
+}
+
+=======================================================
+Further decoding UE Cap NR
+=======================================================
+
+
+Interpreted PDU:
+
+value UE-NR-Capability ::= 
+{
+  accessStratumRelease rel15,
+  pdcp-Parameters 
+  {
+    supportedROHC-Profiles 
+    {
+      profile0x0000 FALSE,
+      profile0x0001 FALSE,
+      profile0x0002 FALSE,
+      profile0x0003 FALSE,
+      profile0x0004 FALSE,
+      profile0x0006 FALSE,
+      profile0x0101 FALSE,
+      profile0x0102 FALSE,
+      profile0x0103 FALSE,
+      profile0x0104 FALSE
+    },
+    maxNumberROHC-ContextSessions cs2,
+    shortSN supported
+  },
+  rlc-Parameters 
+  {
+    am-WithShortSN supported,
+    um-WithShortSN supported,
+    um-WithLongSN supported
+  },
+  mac-Parameters 
+  {
+    mac-ParametersXDD-Diff 
+    {
+      logicalChannelSR-DelayTimer supported,
+      longDRX-Cycle supported,
+      shortDRX-Cycle supported,
+      multipleSR-Configurations supported
+    }
+  },
+  phy-Parameters 
+  {
+    phy-ParametersCommon 
+    {
+      nzp-CSI-RS-IntefMgmt supported,
+      dynamicHARQ-ACK-Codebook supported,
+      semiStaticHARQ-ACK-Codebook supported,
+      pdsch-MappingTypeA supported,
+      rateMatchingResrcSetSemi-Static supported,
+      maxLayersMIMO-Indication supported
+    },
+    phy-ParametersFRX-Diff 
+    {
+      twoFL-DMRS '11'B,
+      supportedDMRS-TypeDL type1,
+      supportedDMRS-TypeUL type1And2,
+      onePortsPTRS '01'B,
+      pucch-F2-WithFH supported,
+      pucch-F3-WithFH supported,
+      absoluteTPC-Command supported,
+      pusch-HalfPi-BPSK supported,
+      pucch-F3-4-HalfPi-BPSK supported,
+      csi-RS-IM-ReceptionForFeedback 
+      {
+        maxConfigNumberNZP-CSI-RS-PerCC 8,
+        maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+        maxConfigNumberCSI-IM-PerCC n8,
+        maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+        totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+      },
+      csi-ReportFramework 
+      {
+        maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+        maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+        maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+        maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+        maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+        maxNumberAperiodicCSI-triggeringStatePerCC n63,
+        maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+        simultaneousCSI-ReportsPerCC 4
+      },
+      mux-SR-HARQ-ACK-CSI-PUCCH-OncePerSlot 
+      {
+        sameSymbol supported
+      },
+      oneFL-DMRS-TwoAdditionalDMRS-UL supported,
+      twoFL-DMRS-TwoAdditionalDMRS-UL supported
+    },
+    phy-ParametersFR1 
+    {
+      pdsch-256QAM-FR1 supported,
+      pdsch-RE-MappingFR1-PerSymbol n10,
+      pdsch-RE-MappingFR1-PerSlot n32
+    }
+  },
+  rf-Parameters 
+  {
+    supportedBandListNR 
+    {
+      {
+        bandNR 78,
+        mimo-ParametersPerBand 
+        {
+          tci-StatePDSCH 
+          {
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+          },
+          pusch-TransCoherence nonCoherent,
+          periodicBeamReport supported,
+          aperiodicBeamReport supported,
+          maxNumberNonGroupBeamReporting n4,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          beamReportTiming 
+          {
+            scs-15kHz sym8,
+            scs-30kHz sym14
+          },
+          beamManagementSSB-CSI-RS 
+          {
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n32,
+            maxNumberCSI-RS-ResourceTwoTx n8,
+            supportedCSI-RS-Density oneAndThree,
+            maxNumberAperiodicCSI-RS-Resource n32
+          },
+          codebookParameters 
+          {
+            type1 
+            {
+              singlePanel 
+              {
+                supportedCSI-RS-ResourceList 
+                {
+                  {
+                    maxNumberTxPortsPerResource p32,
+                    maxNumberResourcesPerBand 2,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p16,
+                    maxNumberResourcesPerBand 4,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p4,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 32
+                  }
+                },
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 4
+              }
+            }
+          },
+          csi-RS-IM-ReceptionForFeedback 
+          {
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n8,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+          },
+          csi-ReportFramework 
+          {
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 4
+          },
+          csi-RS-ForTracking 
+          {
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 16
+          }
+        },
+        multipleTCI supported,
+        pusch-256QAM supported,
+        ue-PowerClass pc2,
+        channelBWs-DL fr1 : 
+          {
+            scs-15kHz '00000000 00'B,
+            scs-30kHz '00010111 11'B,
+            scs-60kHz '00000000 00'B
+          },
+        channelBWs-UL fr1 : 
+          {
+            scs-15kHz '00000000 00'B,
+            scs-30kHz '00010111 11'B,
+            scs-60kHz '00000000 00'B
+          },
+        maxUplinkDutyCycle-PC2-FR1 n100,
+        channelBWs-DL-v1590 fr1 : 
+          {
+            scs-30kHz '10000000 00000000'B
+          },
+        channelBWs-UL-v1590 fr1 : 
+          {
+            scs-30kHz '10000000 00000000'B
+          }
+      },
+      {
+        bandNR 41,
+        modifiedMPR-Behaviour '11000000'B,
+        mimo-ParametersPerBand 
+        {
+          tci-StatePDSCH 
+          {
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+          },
+          pusch-TransCoherence nonCoherent,
+          periodicBeamReport supported,
+          aperiodicBeamReport supported,
+          maxNumberNonGroupBeamReporting n4,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          beamReportTiming 
+          {
+            scs-15kHz sym8,
+            scs-30kHz sym14
+          },
+          beamManagementSSB-CSI-RS 
+          {
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n32,
+            maxNumberCSI-RS-ResourceTwoTx n8,
+            supportedCSI-RS-Density oneAndThree,
+            maxNumberAperiodicCSI-RS-Resource n32
+          },
+          codebookParameters 
+          {
+            type1 
+            {
+              singlePanel 
+              {
+                supportedCSI-RS-ResourceList 
+                {
+                  {
+                    maxNumberTxPortsPerResource p32,
+                    maxNumberResourcesPerBand 2,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p16,
+                    maxNumberResourcesPerBand 4,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p4,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 32
+                  }
+                },
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 4
+              }
+            }
+          },
+          csi-RS-IM-ReceptionForFeedback 
+          {
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n8,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+          },
+          csi-ReportFramework 
+          {
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 4
+          },
+          csi-RS-ForTracking 
+          {
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 16
+          }
+        },
+        multipleTCI supported,
+        pusch-256QAM supported,
+        ue-PowerClass pc3,
+        channelBWs-DL fr1 : 
+          {
+            scs-15kHz '00000000 00'B,
+            scs-30kHz '00010111 11'B,
+            scs-60kHz '00000000 00'B
+          },
+        channelBWs-UL fr1 : 
+          {
+            scs-15kHz '00000000 00'B,
+            scs-30kHz '00010111 11'B,
+            scs-60kHz '00000000 00'B
+          },
+        maxUplinkDutyCycle-PC2-FR1 n100
+      },
+      {
+        bandNR 38,
+        mimo-ParametersPerBand 
+        {
+          tci-StatePDSCH 
+          {
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+          },
+          pusch-TransCoherence nonCoherent,
+          periodicBeamReport supported,
+          aperiodicBeamReport supported,
+          maxNumberNonGroupBeamReporting n4,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          beamReportTiming 
+          {
+            scs-15kHz sym8,
+            scs-30kHz sym14
+          },
+          beamManagementSSB-CSI-RS 
+          {
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n32,
+            maxNumberCSI-RS-ResourceTwoTx n8,
+            supportedCSI-RS-Density oneAndThree,
+            maxNumberAperiodicCSI-RS-Resource n32
+          },
+          codebookParameters 
+          {
+            type1 
+            {
+              singlePanel 
+              {
+                supportedCSI-RS-ResourceList 
+                {
+                  {
+                    maxNumberTxPortsPerResource p32,
+                    maxNumberResourcesPerBand 2,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p16,
+                    maxNumberResourcesPerBand 4,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p4,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 32
+                  }
+                },
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 4
+              }
+            }
+          },
+          csi-RS-IM-ReceptionForFeedback 
+          {
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n8,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+          },
+          csi-ReportFramework 
+          {
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 4
+          },
+          csi-RS-ForTracking 
+          {
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 16
+          }
+        },
+        multipleTCI supported,
+        pusch-256QAM supported,
+        ue-PowerClass pc3,
+        channelBWs-DL fr1 : 
+          {
+            scs-15kHz '00000000 00'B,
+            scs-30kHz '00010000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        channelBWs-UL fr1 : 
+          {
+            scs-15kHz '00000000 00'B,
+            scs-30kHz '00010000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        maxUplinkDutyCycle-PC2-FR1 n100
+      },
+      {
+        bandNR 3,
+        mimo-ParametersPerBand 
+        {
+          tci-StatePDSCH 
+          {
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+          },
+          pusch-TransCoherence nonCoherent,
+          periodicBeamReport supported,
+          aperiodicBeamReport supported,
+          maxNumberNonGroupBeamReporting n4,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          beamReportTiming 
+          {
+            scs-15kHz sym8,
+            scs-30kHz sym14
+          },
+          beamManagementSSB-CSI-RS 
+          {
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n32,
+            maxNumberCSI-RS-ResourceTwoTx n8,
+            supportedCSI-RS-Density oneAndThree,
+            maxNumberAperiodicCSI-RS-Resource n32
+          },
+          codebookParameters 
+          {
+            type1 
+            {
+              singlePanel 
+              {
+                supportedCSI-RS-ResourceList 
+                {
+                  {
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p4,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 32
+                  }
+                },
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 4
+              }
+            }
+          },
+          csi-RS-IM-ReceptionForFeedback 
+          {
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n8,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+          },
+          csi-ReportFramework 
+          {
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 4
+          },
+          csi-RS-ForTracking 
+          {
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 16
+          }
+        },
+        multipleTCI supported,
+        pusch-256QAM supported,
+        ue-PowerClass pc3,
+        rateMatchingLTE-CRS supported,
+        channelBWs-DL fr1 : 
+          {
+            scs-15kHz '11110100 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        channelBWs-UL fr1 : 
+          {
+            scs-15kHz '11110100 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        maxUplinkDutyCycle-PC2-FR1 n100
+      },
+      {
+        bandNR 28,
+        mimo-ParametersPerBand 
+        {
+          tci-StatePDSCH 
+          {
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+          },
+          pusch-TransCoherence nonCoherent,
+          periodicBeamReport supported,
+          aperiodicBeamReport supported,
+          maxNumberNonGroupBeamReporting n4,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          beamReportTiming 
+          {
+            scs-15kHz sym8,
+            scs-30kHz sym14
+          },
+          beamManagementSSB-CSI-RS 
+          {
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n32,
+            maxNumberCSI-RS-ResourceTwoTx n8,
+            supportedCSI-RS-Density oneAndThree,
+            maxNumberAperiodicCSI-RS-Resource n32
+          },
+          codebookParameters 
+          {
+            type1 
+            {
+              singlePanel 
+              {
+                supportedCSI-RS-ResourceList 
+                {
+                  {
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p4,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 32
+                  }
+                },
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 4
+              }
+            }
+          },
+          csi-RS-IM-ReceptionForFeedback 
+          {
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n8,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+          },
+          csi-ReportFramework 
+          {
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 4
+          },
+          csi-RS-ForTracking 
+          {
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 16
+          }
+        },
+        multipleTCI supported,
+        pusch-256QAM supported,
+        ue-PowerClass pc3,
+        rateMatchingLTE-CRS supported,
+        channelBWs-DL fr1 : 
+          {
+            scs-15kHz '11110100 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        channelBWs-UL fr1 : 
+          {
+            scs-15kHz '11110100 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        maxUplinkDutyCycle-PC2-FR1 n100
+      },
+      {
+        bandNR 7,
+        mimo-ParametersPerBand 
+        {
+          tci-StatePDSCH 
+          {
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+          },
+          pusch-TransCoherence nonCoherent,
+          periodicBeamReport supported,
+          aperiodicBeamReport supported,
+          maxNumberNonGroupBeamReporting n4,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          beamReportTiming 
+          {
+            scs-15kHz sym8,
+            scs-30kHz sym14
+          },
+          beamManagementSSB-CSI-RS 
+          {
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n32,
+            maxNumberCSI-RS-ResourceTwoTx n8,
+            supportedCSI-RS-Density oneAndThree,
+            maxNumberAperiodicCSI-RS-Resource n32
+          },
+          codebookParameters 
+          {
+            type1 
+            {
+              singlePanel 
+              {
+                supportedCSI-RS-ResourceList 
+                {
+                  {
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p4,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 32
+                  }
+                },
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 4
+              }
+            }
+          },
+          csi-RS-IM-ReceptionForFeedback 
+          {
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n8,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+          },
+          csi-ReportFramework 
+          {
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 4
+          },
+          csi-RS-ForTracking 
+          {
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 16
+          }
+        },
+        multipleTCI supported,
+        pusch-256QAM supported,
+        ue-PowerClass pc3,
+        rateMatchingLTE-CRS supported,
+        channelBWs-DL fr1 : 
+          {
+            scs-15kHz '11110000 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        channelBWs-UL fr1 : 
+          {
+            scs-15kHz '11110000 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        maxUplinkDutyCycle-PC2-FR1 n100
+      },
+      {
+        bandNR 1,
+        mimo-ParametersPerBand 
+        {
+          tci-StatePDSCH 
+          {
+            maxNumberConfiguredTCIstatesPerCC n16,
+            maxNumberActiveTCI-PerBWP n1
+          },
+          pusch-TransCoherence nonCoherent,
+          periodicBeamReport supported,
+          aperiodicBeamReport supported,
+          maxNumberNonGroupBeamReporting n4,
+          maxNumberSSB-BFD 2,
+          maxNumberCSI-RS-SSB-CBD 8,
+          beamReportTiming 
+          {
+            scs-15kHz sym8,
+            scs-30kHz sym14
+          },
+          beamManagementSSB-CSI-RS 
+          {
+            maxNumberSSB-CSI-RS-ResourceOneTx n8,
+            maxNumberCSI-RS-Resource n32,
+            maxNumberCSI-RS-ResourceTwoTx n8,
+            supportedCSI-RS-Density oneAndThree,
+            maxNumberAperiodicCSI-RS-Resource n32
+          },
+          codebookParameters 
+          {
+            type1 
+            {
+              singlePanel 
+              {
+                supportedCSI-RS-ResourceList 
+                {
+                  {
+                    maxNumberTxPortsPerResource p8,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 64
+                  },
+                  {
+                    maxNumberTxPortsPerResource p4,
+                    maxNumberResourcesPerBand 8,
+                    totalNumberTxPortsPerBand 32
+                  }
+                },
+                modes mode1,
+                maxNumberCSI-RS-PerResourceSet 4
+              }
+            }
+          },
+          csi-RS-IM-ReceptionForFeedback 
+          {
+            maxConfigNumberNZP-CSI-RS-PerCC 8,
+            maxConfigNumberPortsAcrossNZP-CSI-RS-PerCC 64,
+            maxConfigNumberCSI-IM-PerCC n8,
+            maxNumberSimultaneousNZP-CSI-RS-PerCC 4,
+            totalNumberPortsSimultaneousNZP-CSI-RS-PerCC 32
+          },
+          csi-ReportFramework 
+          {
+            maxNumberPeriodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberAperiodicCSI-PerBWP-ForCSI-Report 2,
+            maxNumberSemiPersistentCSI-PerBWP-ForCSI-Report 0,
+            maxNumberPeriodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-PerBWP-ForBeamReport 2,
+            maxNumberAperiodicCSI-triggeringStatePerCC n63,
+            maxNumberSemiPersistentCSI-PerBWP-ForBeamReport 0,
+            simultaneousCSI-ReportsPerCC 4
+          },
+          csi-RS-ForTracking 
+          {
+            maxBurstLength 2,
+            maxSimultaneousResourceSetsPerCC 1,
+            maxConfiguredResourceSetsPerCC 8,
+            maxConfiguredResourceSetsAllCC 16
+          }
+        },
+        multipleTCI supported,
+        pusch-256QAM supported,
+        ue-PowerClass pc3,
+        rateMatchingLTE-CRS supported,
+        channelBWs-DL fr1 : 
+          {
+            scs-15kHz '11110110 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        channelBWs-UL fr1 : 
+          {
+            scs-15kHz '11110110 00'B,
+            scs-30kHz '00000000 00'B,
+            scs-60kHz '00000000 00'B
+          },
+        maxUplinkDutyCycle-PC2-FR1 n100
+      }
+    }
+  },
+  measAndMobParameters 
+  {
+    measAndMobParametersCommon 
+    {
+      ssb-RLM supported
+    },
+    measAndMobParametersXDD-Diff 
+    {
+      intraAndInterF-MeasAndReport supported,
+      eventA-MeasAndReport supported
+    },
+    measAndMobParametersFRX-Diff 
+    {
+      ss-SINR-Meas supported,
+      simultaneousRxDataSSB-DiffNumerology supported
+    }
+  },
+  featureSets 
+  {
+    featureSetsDownlink 
+    {
+      {
+        featureSetListPerDownlinkCC 
+        {
+          1
+        },
+        ue-SpecificUL-DL-Assignment supported
+      },
+      {
+        featureSetListPerDownlinkCC 
+        {
+          2
+        },
+        ue-SpecificUL-DL-Assignment supported
+      },
+      {
+        featureSetListPerDownlinkCC 
+        {
+          3
+        },
+        ue-SpecificUL-DL-Assignment supported
+      },
+      {
+        featureSetListPerDownlinkCC 
+        {
+          4
+        },
+        ue-SpecificUL-DL-Assignment supported
+      },
+      {
+        featureSetListPerDownlinkCC 
+        {
+          5
+        },
+        ue-SpecificUL-DL-Assignment supported
+      },
+      {
+        featureSetListPerDownlinkCC 
+        {
+          6
+        },
+        ue-SpecificUL-DL-Assignment supported
+      },
+      {
+        featureSetListPerDownlinkCC 
+        {
+          7
+        },
+        ue-SpecificUL-DL-Assignment supported
+      }
+    },
+    featureSetsDownlinkPerCC 
+    {
+      {
+        supportedSubcarrierSpacingDL kHz30,
+        supportedBandwidthDL fr1 : mhz100,
+        channelBW-90mhz supported,
+        maxNumberMIMO-LayersPDSCH fourLayers,
+        supportedModulationOrderDL qam256
+      },
+      {
+        supportedSubcarrierSpacingDL kHz30,
+        supportedBandwidthDL fr1 : mhz20,
+        maxNumberMIMO-LayersPDSCH fourLayers,
+        supportedModulationOrderDL qam256
+      },
+      {
+        supportedSubcarrierSpacingDL kHz15,
+        supportedBandwidthDL fr1 : mhz30,
+        maxNumberMIMO-LayersPDSCH fourLayers,
+        supportedModulationOrderDL qam256
+      },
+      {
+        supportedSubcarrierSpacingDL kHz15,
+        supportedBandwidthDL fr1 : mhz30,
+        maxNumberMIMO-LayersPDSCH twoLayers,
+        supportedModulationOrderDL qam256
+      },
+      {
+        supportedSubcarrierSpacingDL kHz15,
+        supportedBandwidthDL fr1 : mhz20,
+        maxNumberMIMO-LayersPDSCH fourLayers,
+        supportedModulationOrderDL qam256
+      },
+      {
+        supportedSubcarrierSpacingDL kHz15,
+        supportedBandwidthDL fr1 : mhz20,
+        maxNumberMIMO-LayersPDSCH twoLayers,
+        supportedModulationOrderDL qam256
+      },
+      {
+        supportedSubcarrierSpacingDL kHz15,
+        supportedBandwidthDL fr1 : mhz40,
+        maxNumberMIMO-LayersPDSCH fourLayers,
+        supportedModulationOrderDL qam256
+      }
+    },
+    featureSetsUplink 
+    {
+      {
+        featureSetListPerUplinkCC 
+        {
+          1
+        },
+        supportedSRS-Resources 
+        {
+          maxNumberAperiodicSRS-PerBWP n16,
+          maxNumberAperiodicSRS-PerBWP-PerSlot 6,
+          maxNumberPeriodicSRS-PerBWP n16,
+          maxNumberPeriodicSRS-PerBWP-PerSlot 6,
+          maxNumberSemiPersistentSRS-PerBWP n2,
+          maxNumberSemiPersistentSRS-PerBWP-PerSlot 2,
+          maxNumberSRS-Ports-PerResource n1
+        }
+      },
+      {
+        featureSetListPerUplinkCC 
+        {
+          2
+        },
+        supportedSRS-Resources 
+        {
+          maxNumberAperiodicSRS-PerBWP n16,
+          maxNumberAperiodicSRS-PerBWP-PerSlot 6,
+          maxNumberPeriodicSRS-PerBWP n16,
+          maxNumberPeriodicSRS-PerBWP-PerSlot 6,
+          maxNumberSemiPersistentSRS-PerBWP n2,
+          maxNumberSemiPersistentSRS-PerBWP-PerSlot 2,
+          maxNumberSRS-Ports-PerResource n1
+        }
+      },
+      {
+        featureSetListPerUplinkCC 
+        {
+          3
+        },
+        supportedSRS-Resources 
+        {
+          maxNumberAperiodicSRS-PerBWP n16,
+          maxNumberAperiodicSRS-PerBWP-PerSlot 6,
+          maxNumberPeriodicSRS-PerBWP n16,
+          maxNumberPeriodicSRS-PerBWP-PerSlot 6,
+          maxNumberSemiPersistentSRS-PerBWP n2,
+          maxNumberSemiPersistentSRS-PerBWP-PerSlot 2,
+          maxNumberSRS-Ports-PerResource n1
+        }
+      },
+      {
+        featureSetListPerUplinkCC 
+        {
+          4
+        },
+        supportedSRS-Resources 
+        {
+          maxNumberAperiodicSRS-PerBWP n16,
+          maxNumberAperiodicSRS-PerBWP-PerSlot 6,
+          maxNumberPeriodicSRS-PerBWP n16,
+          maxNumberPeriodicSRS-PerBWP-PerSlot 6,
+          maxNumberSemiPersistentSRS-PerBWP n2,
+          maxNumberSemiPersistentSRS-PerBWP-PerSlot 2,
+          maxNumberSRS-Ports-PerResource n1
+        }
+      },
+      {
+        featureSetListPerUplinkCC 
+        {
+          5
+        },
+        supportedSRS-Resources 
+        {
+          maxNumberAperiodicSRS-PerBWP n16,
+          maxNumberAperiodicSRS-PerBWP-PerSlot 6,
+          maxNumberPeriodicSRS-PerBWP n16,
+          maxNumberPeriodicSRS-PerBWP-PerSlot 6,
+          maxNumberSemiPersistentSRS-PerBWP n2,
+          maxNumberSemiPersistentSRS-PerBWP-PerSlot 2,
+          maxNumberSRS-Ports-PerResource n1
+        }
+      }
+    },
+    featureSetsUplinkPerCC 
+    {
+      {
+        supportedSubcarrierSpacingUL kHz30,
+        supportedBandwidthUL fr1 : mhz100,
+        channelBW-90mhz supported,
+        mimo-CB-PUSCH 
+        {
+          maxNumberMIMO-LayersCB-PUSCH oneLayer,
+          maxNumberSRS-ResourcePerSet 1
+        },
+        supportedModulationOrderUL qam256
+      },
+      {
+        supportedSubcarrierSpacingUL kHz30,
+        supportedBandwidthUL fr1 : mhz20,
+        mimo-CB-PUSCH 
+        {
+          maxNumberMIMO-LayersCB-PUSCH oneLayer,
+          maxNumberSRS-ResourcePerSet 1
+        },
+        supportedModulationOrderUL qam256
+      },
+      {
+        supportedSubcarrierSpacingUL kHz15,
+        supportedBandwidthUL fr1 : mhz30,
+        mimo-CB-PUSCH 
+        {
+          maxNumberMIMO-LayersCB-PUSCH oneLayer,
+          maxNumberSRS-ResourcePerSet 1
+        },
+        supportedModulationOrderUL qam256
+      },
+      {
+        supportedSubcarrierSpacingUL kHz15,
+        supportedBandwidthUL fr1 : mhz20,
+        mimo-CB-PUSCH 
+        {
+          maxNumberMIMO-LayersCB-PUSCH oneLayer,
+          maxNumberSRS-ResourcePerSet 1
+        },
+        supportedModulationOrderUL qam256
+      },
+      {
+        supportedSubcarrierSpacingUL kHz15,
+        supportedBandwidthUL fr1 : mhz40,
+        mimo-CB-PUSCH 
+        {
+          maxNumberMIMO-LayersCB-PUSCH oneLayer,
+          maxNumberSRS-ResourcePerSet 1
+        },
+        supportedModulationOrderUL qam256
+      }
+    },
+    featureSetsDownlink-v1540 
+    {
+      {
+        oneFL-DMRS-TwoAdditionalDMRS-DL supported,
+        twoFL-DMRS-TwoAdditionalDMRS-DL supported
+      },
+      {
+        oneFL-DMRS-TwoAdditionalDMRS-DL supported,
+        twoFL-DMRS-TwoAdditionalDMRS-DL supported
+      },
+      {
+        oneFL-DMRS-TwoAdditionalDMRS-DL supported,
+        additionalDMRS-DL-Alt supported,
+        twoFL-DMRS-TwoAdditionalDMRS-DL supported
+      },
+      {
+        oneFL-DMRS-TwoAdditionalDMRS-DL supported,
+        additionalDMRS-DL-Alt supported,
+        twoFL-DMRS-TwoAdditionalDMRS-DL supported
+      },
+      {
+        oneFL-DMRS-TwoAdditionalDMRS-DL supported,
+        additionalDMRS-DL-Alt supported,
+        twoFL-DMRS-TwoAdditionalDMRS-DL supported
+      },
+      {
+        oneFL-DMRS-TwoAdditionalDMRS-DL supported,
+        additionalDMRS-DL-Alt supported,
+        twoFL-DMRS-TwoAdditionalDMRS-DL supported
+      },
+      {
+        oneFL-DMRS-TwoAdditionalDMRS-DL supported,
+        additionalDMRS-DL-Alt supported,
+        twoFL-DMRS-TwoAdditionalDMRS-DL supported
+      }
+    }
+  },
+  nonCriticalExtension 
+  {
+    interRAT-Parameters 
+    {
+      eutra 
+      {
+        supportedBandListEUTRA 
+        {
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          12,
+          17,
+          20,
+          26,
+          28,
+          32,
+          38,
+          40,
+          41,
+          66
+        },
+        eutra-ParametersCommon 
+        {
+          mfbi-EUTRA supported
+        }
+      }
+    }
+  }
+}
+
+=======================================================
+Further decoding EUTRA NR
+=======================================================
+
+
+Interpreted PDU:
+
+value UE-MRDC-Capability ::= 
+{
+  measAndMobParametersMRDC 
+  {
+    measAndMobParametersMRDC-FRX-Diff 
+    {
+      simultaneousRxDataSSB-DiffNumerology supported
+    }
+  },
+  rf-ParametersMRDC 
+  {
+    supportedBandCombinationList 
+    {
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 38,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 38,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 28,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 28,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 28,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 28,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 28,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 28,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 8,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '1111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 8,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '1111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 8,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 8,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA c,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 2,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 3,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 5,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 5,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 0,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 1,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA c,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 2,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 3,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA c,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 2,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 78,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 3,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        },
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 41,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 41,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 3,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          dualPA-Architecture supported,
+          intraBandENDC-Support both
+        },
+        supportedBandwidthCombinationSet '11'B,
+        powerClass-v1530 pc2
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 38,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 4,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 38,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 4,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 5,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 6,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 5,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 6,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 7,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 5,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 6,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '11'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA c,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 8,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 7,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 28,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 7,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 7,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 9,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 7,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 9,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 3,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 10,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 3,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 11,
+        ca-ParametersEUTRA 
+        {
+          supportedBandwidthCombinationSetEUTRA-v1530 '111'B
+        },
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 3,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 10,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 1,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 3,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 11,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 20,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 1,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 12,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 7,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 1,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 13,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      },
+      {
+        bandList 
+        {
+          eutra : 
+            {
+              bandEUTRA 3,
+              ca-BandwidthClassDL-EUTRA a,
+              ca-BandwidthClassUL-EUTRA a
+            },
+          nr : 
+            {
+              bandNR 1,
+              ca-BandwidthClassDL-NR a,
+              ca-BandwidthClassUL-NR a
+            }
+        },
+        featureSetCombination 13,
+        mrdc-Parameters 
+        {
+          dynamicPowerSharingENDC supported,
+          simultaneousRxTxInterBandENDC supported
+        }
+      }
+    },
+    supportedBandCombinationList-v1540 
+    {
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      },
+      {
+        bandList-v1540 
+        {
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          },
+          {
+            srs-TxSwitch 
+            {
+              supportedSRS-TxPortSwitch notSupported
+            }
+          }
+        },
+        ca-ParametersNR-v1540 
+        {
+          csi-RS-IM-ReceptionForFeedbackPerBandComb 
+          {
+            maxNumberSimultaneousNZP-CSI-RS-ActBWP-AllCC 8,
+            totalNumberPortsSimultaneousNZP-CSI-RS-ActBWP-AllCC 64
+          },
+          simultaneousCSI-ReportsAllCC 8
+        }
+      }
+    }
+  },
+  generalParametersMRDC 
+  {
+    splitDRB-withUL-Both-MCG-SCG supported
+  },
+  featureSetCombinations 
+  {
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 0
+          }
+      },
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 1,
+            uplinkSetNR 1
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 0
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 1,
+            uplinkSetNR 1
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 2,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 1,
+            uplinkSetNR 1
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 3,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 1,
+            uplinkSetNR 1
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 3,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 2,
+            uplinkSetNR 2
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 0
+          }
+      },
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 4,
+            uplinkSetNR 3
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 0
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 4,
+            uplinkSetNR 3
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 3,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 4,
+            uplinkSetNR 3
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 2,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 4,
+            uplinkSetNR 3
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 3,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 5,
+            uplinkSetNR 4
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 0
+          }
+      },
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 3,
+            uplinkSetNR 3
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 0
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 3,
+            uplinkSetNR 3
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 1,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 7,
+            uplinkSetNR 5
+          }
+      }
+    },
+    {
+      {
+        eutra : 
+          {
+            downlinkSetEUTRA 3,
+            uplinkSetEUTRA 1
+          }
+      },
+      {
+        nr : 
+          {
+            downlinkSetNR 7,
+            uplinkSetNR 5
+          }
+      }
+    }
+  }
+}
