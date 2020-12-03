@@ -10,7 +10,7 @@ global contents_in
 
 def my_test(self):
     test_text = contents_in.GetValue()
-    parse_uecap.my_test2(test_text)
+    result = parse_uecap.my_test2()
 
 # text mode : input is UE cap full text
 def my_run(self):
@@ -20,7 +20,7 @@ def my_run(self):
     result = parse_uecap.get_uecap(test_text)
     for endc in result:
         contents_out.AppendText(str(endc) + "\n")
-    print("hello RUN button")
+    print("DONE!")
 
 # file mode : input is file path
 def my_run2(self):
@@ -68,11 +68,12 @@ if __name__ == '__main__':
     win = wx.Frame(None, title="UE Capability of ENDC", size=(500, 450))
     bkg = wx.Panel(win)
 
-    P_Button = wx.Button(bkg, label="Paste")
-    C_Button = wx.Button(bkg, label="Copy")
+    P_Button = wx.Button(bkg, label="Paste LOG")
+    C_Button = wx.Button(bkg, label="Copy Result")
     R_Button = wx.Button(bkg, label="Run")
     P_Button.Bind(wx.EVT_BUTTON, my_paste)
     R_Button.Bind(wx.EVT_BUTTON, my_run)
+    # R_Button.Bind(wx.EVT_BUTTON, my_test)
     C_Button.Bind(wx.EVT_BUTTON, my_copy)
     # filename = wx.TextCtrl(bkg)
     contents_in = wx.TextCtrl(bkg, style=wx.TE_MULTILINE | wx.HSCROLL)
